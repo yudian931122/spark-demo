@@ -57,11 +57,11 @@ object PipeLineDemo {
 
     // 7.创建测试集
     val test = ss.createDataFrame(Seq(
-      (4L, "spark i j h", 1.0),
-      (5L, "l m n", 0.0),
-      (6L, "spark mapreduce", 1.0),
-      (7L, "hadoop apache", 0.0)
-    )).toDF("id", "text", "label")
+      (4L, "spark i j h"),
+      (5L, "l m n"),
+      (6L, "spark mapreduce"),
+      (7L, "hadoop apache")
+    )).toDF("id", "text")
 
     // 使用测试数据进行测试
     val res = model1.transform(test)

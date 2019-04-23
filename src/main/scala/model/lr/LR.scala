@@ -1,4 +1,4 @@
-package lr
+package model.lr
 
 import org.apache.spark.ml.classification.LogisticRegression
 import org.apache.spark.ml.linalg.Vectors
